@@ -1,0 +1,27 @@
+/* .App {
+    position: fixed;
+  } */
+  
+  .navBar {
+  position: fixed;
+  width: 100%;
+  top :0px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  }
+  
+  .logo{
+    position: fixed;
+    width: 100px;
+    left: 10px;
+    display: flex;
+  }
+  
+  .avatar{
+    position: fixed;
+    width: 30px;
+    right: 10px;
+  }
