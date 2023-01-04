@@ -8,17 +8,14 @@ function Banner() {
 
     const [movie, setMovie] = useState()
     const [random, setRandom] = useState()
-    // setRandom(Math.floor(Math.random() * 20))
-    // console.log('random ' + movie.title)
     useEffect(() => {
         axiosInstance.get(`trending/all/week?api_key=${apiKey}`).then((response) => {
-            // console.log('response' + response.data.results[0])
             setMovie(response.data.results[Math.floor(Math.random() * 20)]);
         })
 
     }, []);
     return (
-        <div style={{backgroundImage:`url(${movie ? imageUrl+movie.backdrop_path : ""})`}} className="banner" >
+        <div style={{backgroundImage:`url(${movie? imageUrl+movie.backdrop_path: ""})`}} className="banner" >
             <div className="content">
                 <h1 className="title">{movie ? movie.title : ""}</h1>
                 <div>

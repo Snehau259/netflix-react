@@ -1,7 +1,7 @@
 .banner{
     
     background-size: cover;
-    height: 448px;
+    height: max-content;
     color: white;
     /* background-image: url('https://wallpaperaccess.com/full/2703652.png'); */
     
